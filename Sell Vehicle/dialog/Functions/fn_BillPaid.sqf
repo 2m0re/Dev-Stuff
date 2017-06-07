@@ -23,6 +23,6 @@ _unit = player;
 
 if(isNil "_vehicle") exitWith {hint localize "STR_Garage_Selection_Error"};
 
-[[_vid,_pid,_price,player,life_garage_type],"TON_fnc_vehicleDelete",false,false] spawn life_fnc_MP;
+[[_vid,_pid,_price,player,life_garage_type,1],"TON_fnc_vehicleDelete",false,false] spawn life_fnc_MP;
 life_atmcash = life_atmcash + _value;
 closeDialog 0;
